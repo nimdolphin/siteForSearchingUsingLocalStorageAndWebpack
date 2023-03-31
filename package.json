@@ -1,0 +1,19 @@
+{
+  "name": "my-proj-january",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "node-sass -w styles/style.scss styles/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-sass": "^3.4.3",
+    "jquery": "^3.6.3",
+    "node-sass": "^8.0.0",
+    "popper.js": "^1.16.1"
+  }
+}

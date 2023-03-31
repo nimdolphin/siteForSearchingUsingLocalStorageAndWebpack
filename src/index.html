@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true">Flights
+          <div class="img"></div>
+        </button>
+
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false">Hotels
+        </button>
+
+        <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false">Cars
+        </button>
+        <a href="search-history.html" class="nav-link" id="history">History</a>
+      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+        tabindex="0">
+
+        <form class="row g-3 needs-validation position" id="form-flights" novalidate>
+          <div class="row g-3 mmm">
+            <div class="col">
+              <label for="startDate">Start Date</label>
+              <input id="startDate"
+                class="form-control abc"
+                type="date"
+                required/>
+            </div>
+
+            <div class="col mmm">
+              <label for="endDate abc">End Date</label>
+              <input id="endDate"
+                class="form-control"
+                type="date"
+                disabled
+                required/>
+            </div>
+          </div>
+          <div class="mb-3 mmm">
+            <label for="formGroupExampleInput" class="form-label">From</label>
+            <input type="text" class="form-control abc" id="formGroupExampleInput" required>
+          </div>
+
+          <div class="mb-3 mmm">
+            <label for="formGroupExampleInput2" class="form-label">To</label>
+            <input type="text" class="form-control abc" id="formGroupExampleInput2" required>
+          </div>
+          <div class="clear-and-search">
+            <button type="submit" id="buttonSearch" class="btn btn-primary" disabled>Search</button>
+            <button type="reset" class="btn btn-light">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <div
+        class="tab-pane fade hotel"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+        tabindex="0">
+
+        <form class="row g-3 needs-validation2 position" id="form-hotels" novalidate>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="startDate2">Start Date</label>
+              <input id="startDate2"
+                class="form-control"
+                type="date"
+                required/>
+            </div>
+
+            <div class="col">
+              <label for="endDate2">End Date</label>
+              <input id="endDate2"
+                class="form-control"
+                type="date"
+                required
+                disabled/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Amenities</label>
+            <select class="form-select" id="amenities" aria-label="Default select example" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Country</label>
+            <select class="form-select" aria-label="Default select example" id="countries" required>
+              <option value="" selected>Select Country</option>
+
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">State</label>
+            <select class="form-select" aria-label="Default select example" id="states" required>
+              <option value="" selected>Select State</option>
+
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">City</label>
+            <select class="form-select" aria-label="Default select example" id="cities" required>
+              <option value="" selected>Select City</option>
+
+            </select>
+          </div>
+
+          <div class="clear-and-search">
+            <button type="submit" id="buttonSearchHotels" class="btn btn-primary" disabled>Search</button>
+            <button type="reset" class="btn btn-light">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="nav-contact"
+        role="tabpanel"
+        aria-labelledby="nav-contact-tab"
+        tabindex="0">
+
+        <form class="row g-3 needs-validation3 position" id="form-cars" novalidate>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="startDate3">Start Date</label>
+              <input id="startDate3"
+                class="form-control"
+                type="date"
+                required/>
+            </div>
+
+            <div class="col">
+              <label for="endDate3">End Date</label>
+              <input id="endDate3"
+                class="form-control"
+                type="date"
+                required
+                disabled/>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Type</label>
+            <select class="form-select" id="comfort" aria-label="Default select example" required>
+              <option selected value="Economy">Economy</option>
+              <option value="Comfort">Comfort</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" required>
+          </div>
+
+          <div class="clear-and-search">
+            <button type="submit" id="buttonSearchCars" class="btn btn-primary" disabled>Search</button>
+            <button type="reset" class="btn btn-light">Clear</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
