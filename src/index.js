@@ -1,3 +1,7 @@
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./styles/style.scss";
+import "./styles/style.css";
+
 const startDate = document.getElementById("startDate");
 const endDate = document.getElementById("endDate");
 

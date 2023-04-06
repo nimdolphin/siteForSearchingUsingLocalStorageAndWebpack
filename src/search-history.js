@@ -1,8 +1,7 @@
-let data = localStorage.getItem("historyList");
+import "./styles/style.scss";
+import "./styles/style.css";
 
-if (data !== "" && data !== null) {
-  historyList = JSON.parse(data);
-}
+let historyList = JSON.parse(localStorage.getItem("historyList"));
 
 historyList = historyList.map((item, index) => ({
   ...item,
@@ -67,6 +66,7 @@ function main() {
         displayPagination(arrData, rows);
       });
 
+      let key;
       for (key in el) {
         if ((startdate, enddate, from, to)) {
           img.src = "./icons/flights.png";
