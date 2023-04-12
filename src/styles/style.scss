@@ -1,0 +1,103 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.container {
+  display: inline-flex;
+  padding: 20px;
+  padding-top: 50px;
+    nav{
+      padding-top: 50px;
+      .nav-tabs{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 60px;
+        padding: 0 30px;
+        border: none;
+      }
+    }
+  }
+
+  .tab-content {
+    .clear-and-search {
+      button {
+          float: right;
+      }
+    }
+  }
+
+#nav-home-tab {
+  border: none;
+  padding: 0px 40px;
+  margin: 10px;
+  background-image: url(../icons/flights.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+#nav-profile-tab {
+  border: none;
+  padding: 0px 40px;
+  margin: 10px;
+  background-image: url(../icons/hotels.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+#nav-contact-tab {
+  border: none;
+  padding: 0px 40px;
+  margin: 10px;
+  background-image: url(../icons/cars.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+#history {
+  border: none;
+  padding: 0px 40px;
+  margin: 10px;
+  background-image: url(../icons/history.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.mb-3 {
+  label {
+    font-weight: 500;
+    margin-left: 0px;
+  }
+  .form-control {
+    font-size: 16px;
+    min-width: 1000px;
+    margin: -3px;
+  }
+  .form-select {
+    font-size: 16px;
+    min-width: 1000px;
+    margin: -3px;
+  }
+}
+
+.col {
+  label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+}
+
+.wrapper {
+  padding: 50px 100px 0px 100px;
+  h1 {
+    padding-bottom: 10px;
+  }
+
+  .btn-close {
+    float: right;
+  }
+  .list-group {
+    padding-bottom: 10px;
+  }
+}
