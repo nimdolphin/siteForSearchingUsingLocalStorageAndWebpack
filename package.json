@@ -1,6 +1,9 @@
 {
-  "name": "my-proj-january",
+  "name": "site-for-searching",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/{nimdolphin}/{siteForSearchingUsingLocalStorageAndWebpack}.git"
+  },
   "description": "",
   "private": true,
   "scripts": {
@@ -8,7 +11,9 @@
     "start": "cross-env NODE_ENV=development webpack serve --open",
     "watch": "cross-env NODE_ENV=development webpack --watch",
     "dev": "cross-env NODE_ENV=development webpack",
-    "build": "cross-env NODE_ENV=production webpack --mode production"
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": "> 0.25%, not dead",
   "author": "",
@@ -31,6 +36,7 @@
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
     "node": "^19.8.1",
